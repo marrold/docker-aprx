@@ -9,4 +9,4 @@ RUN ARCH=$(uname -m) && \
     wget --inet4-only -O /tmp/aprx.deb https://thelifeofkenneth.com/aprx/debs/$DEB && \
     dpkg -i /tmp/aprx.deb
 
-CMD ["aprx", "-f", "/etc/aprx.conf", "-i", "-v"]
+CMD ["aprx", "-f", "/etc/aprx.conf", "-v", "-dd", "-L"]
